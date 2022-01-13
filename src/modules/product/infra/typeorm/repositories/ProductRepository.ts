@@ -27,5 +27,27 @@ class ProductRepository extends BaseRepository<Product> implements IProductRepos
         });
         return product;
     }
+
+    async searchForProduct(id?: string, name?: string, category_id?: string): Promise<Product[]> {
+        const productsQuery = await this.repository
+            .createQueryBuilder("p")
+            .select("p")
+
+        if (id) {
+            productsQuery.andWhere("id = :id", { id })
+        }
+
+        if (name) {
+            productsQuery.andWhere("name = :name", { name })
+        }
+
+        if (category_id) {
+            productsQuery.andWhere("category_id = :category_id", { category_id })
+        }
+
+        const products = await productsQuery.getMany();
+
+        return products;
+    }
 }
 export { ProductRepository }

@@ -5,4 +5,5 @@ export interface IProductRepository extends IBaseRepository<Product> {
     all(): Promise<Product[]>;
     findById(id: string): Promise<Product>;
     findByName(name: string): Promise<Product>;
+    searchForProduct(id?: string, name?: string, category_id?: string): Promise<Product[]>;
 }
