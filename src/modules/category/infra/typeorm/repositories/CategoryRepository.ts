@@ -8,7 +8,9 @@ class CategoryRepository extends BaseRepository<Category> implements ICategoryRe
     }
 
     async all(): Promise<Category[]> {
-        const all = await this.repository.find();
+        const all = await this.repository.find({
+            relations: ["productId"]
+        });
         return all;
     }
 
