@@ -7,8 +7,9 @@
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "test": "jest"
-},
+  },
   "dependencies": {
+    "dotenv": "^11.0.0",
     "express": "^4.17.2",
     "express-async-errors": "^3.1.1",
     "pg": "^8.7.1",
