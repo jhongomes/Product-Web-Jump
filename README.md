@@ -1,6 +1,11 @@
 <br>
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" height="75" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  height="60" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="70" width="100" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" height="60" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="50" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" height="70" /> 
 
-# 📜 Projeto
+</p>
+
+# 📜 PROJETO
 
  Product Web Jump é um crud challenge que permite cadastrar categorias e produtos. Com um relacionamento bidirecional, é possivel atribuir produtos a uma categoria, desenvolvida em um banco relacional `postgres` em um container `docker` 
 
@@ -48,12 +53,14 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" height="75" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  height="60" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="70" width="100" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" height="60" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="50" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" height="70" /> 
 
-</p>
-
+- [Nodejs](https://nodejs.org/en/)
+- [Express](http://expressjs.com/pt-br/)
+- [Typescript](https://docs.microsoft.com/pt-br/archive/msdn-magazine/2015/january/typescript-understanding-typescript)
+- [TypeORM](https://typeorm.io/#/)
+- [docker](https://docs.docker.com/)
+- [Jest](https://jestjs.io)
+- [VS Code](https://code.visualstudio.com/) com [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) e [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 
 
@@ -75,3 +82,54 @@ Clean Architecture
 
 
 <br/>
+
+Clone o projeto para sua maquina local:
+```bash
+# Clone o projeto para sua maquina local
+$ git clone https://github.com/jhongomes/Product-Web-Jump.git
+
+# Acesse a pasta do projeto
+$ cd Product-Web-Jump
+
+# Instale todas as dependências do projeto
+$ yarn 
+ou
+$ npm i
+
+# Rode o comando para criar um database no docker
+$ docker-compose up -d
+
+# Rode o comando para subir as migrations no docker
+$ yarn typeorm migration:run
+ou
+$ npm run typeorm migration:run
+
+# Rode o projeto
+$ yarn dev
+ou
+$ npm run dev
+```
+<br />
+
+# Documentação
+ A documentação pode ser acessada através: http://localhost:3333/api-docs quando o servidor local estiver ativo. 
+
+![swagger](https://user-images.githubusercontent.com/57759255/149639431-266785dd-5ec2-452d-a531-07d01b36a81a.gif)
+
+<br />
+
+
+# Testes
+[Jest](https://jestjs.io/) Foi utilizado para os testes, para rodá-los execute:
+```
+$ yarn test
+```
+Ou:
+```
+$ npm run test
+```
+
+<br />
+
+
+<p align="center">Feito com 💜 by <a href="https://www.linkedin.com/in/jhonatan-gomes-de-souza-513a3a197?challengeId=AQFBHhiP4QdIHQAAAX3BFHIS5K2MDNtBpp5ivwl-velebU8gwQxxhLIz51nO-__MejbD6jfZvQdyKWzrLVGfHNChGYGu8GqyMA&submissionId=ebdd152b-6a1b-c116-99c3-2848b7bbe760" target="_blank">Jhonatan Gomes </a></p>
