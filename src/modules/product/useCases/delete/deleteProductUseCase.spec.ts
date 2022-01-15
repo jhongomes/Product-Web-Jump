@@ -1,3 +1,4 @@
+import { IStorageProvider } from "../../../../shared/container/provider/StorageProvider/IStorageProvider";
 import { ProductRepositoryInMemory } from "../../repositories/in-memory/ProductRepositoryInMemory";
 import { CreateProductUseCase } from "../create/createProductUseCase";
 import { DeleteProductUseCase } from "./deleteProductUseCase";
@@ -5,12 +6,13 @@ import { DeleteProductUseCase } from "./deleteProductUseCase";
 let createProductUseCase: CreateProductUseCase;
 let productRepositoryInMemory: ProductRepositoryInMemory;
 let deleteProductUseCase: DeleteProductUseCase;
+let storageProvider: IStorageProvider;
 
 describe("Delete product", () => {
     beforeEach(() => {
         productRepositoryInMemory = new ProductRepositoryInMemory();
         createProductUseCase = new CreateProductUseCase(productRepositoryInMemory);
-        deleteProductUseCase = new DeleteProductUseCase(productRepositoryInMemory);
+        deleteProductUseCase = new DeleteProductUseCase(productRepositoryInMemory, storageProvider);
     });
 
     it("Should be able to exclude one product", async () => {
