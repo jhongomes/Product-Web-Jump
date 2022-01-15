@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" height="75" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  height="60" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="70" width="100" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" height="75" width="100" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  height="60" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="70" width="100" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" height="60" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="50" width="100" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" height="70" /> 
 
 </p>
@@ -43,7 +43,7 @@
 
 - Não deve ser possível cadastrar um produto com `name` existente.
 - Não deve ser possível alterar o `name` de um produto já cadastrado no sistema.
-- Não deve ser possível excluir um produo que não exista no sistema.
+- Não deve ser possível excluir um produto que não exista no sistema.
 - Não deve ser possível cadastrar um produto sem `category_id`.
 - Não deve ser possível fazer upload de `image` do produto com o `id` inválido.
 
