@@ -1,5 +1,5 @@
 export interface ICreateCategoryDTO {
     id?: string;
-    code?: string;
+    code?: number;
     name: string;
 }
